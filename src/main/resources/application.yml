@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: eureka-service-discovery
+
+server:
+  port: 8761
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      # ⬇️ Se quiser manter essa configuração, mas normalmente não precisa
+      defaultZone: http://localhost:8761/eureka/
