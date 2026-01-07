@@ -1,6 +1,12 @@
 spring:
   application:
     name: eureka-service-discovery
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
 
 server:
   port: 8761
